@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="app_name">Vetuco</string>
+    <string-array name="menu">
+        <item>Informacion</item>
+        <item>Galeria</item>
+        <item>Horario</item>
+        <item>Tarifas</item>
+        <item>Localizacion</item>
+        <item>Reserva</item>
+        <item>Contacto</item>
+
+
+
+    </string-array>
+
+</resources>
