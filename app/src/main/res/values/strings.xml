@@ -5,6 +5,7 @@
 
     <string name="app_name">Vetuco</string>
     <string-array name="menu">
+        <item>Inicio</item>
         <item>Informacion</item>
         <item>Galeria</item>
         <item>Horario</item>
@@ -16,5 +17,12 @@
 
 
     </string-array>
+    <string name="title_activity_contacto">Contacto</string>
+    <string name="title_activity_tarifas">Tarifas</string>
+    <string name="title_activity_informacion">Informacion</string>
+    <string name="title_activity_galeria">Galeria</string>
+    <string name="title_activity_horario">Horario</string>
+    <string name="title_activity_localizacion">Localizacion</string>
+    <string name="title_activity_reserva">Reserva</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.shoki.vetuco;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -30,21 +31,39 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         TextView myText= (TextView) view;
         Toast.makeText(this, "Seleccionado " + myText.getText(), Toast.LENGTH_SHORT).show();
-       // Intent intent = new Intent(this.tarifas.class);
-        //EditText editText = (EditText) findViewById(R.id.spinner);
-        //String message = editText.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
-        //startActivity(intent);
-     // Intent i = null;
-      // switch(position){
-       //   case 1:
-          //    Intent i = new Intent(MainActivity.this, tarifas.class);
-        //      break;
-         // case 2:
-             //  i = new Intent(MainActivity.this, contacto.class);
-         //      break;
-         //   }
-        //MainActivity.this.startActivity(i);
+
+        //Se hace un switch case para que el spinner se meta en la seccion adecuada
+      Intent i = null;
+       switch(position){
+           case 1:
+               i = new Intent(MainActivity.this, Informacion.class);
+               MainActivity.this.startActivity(i);
+               break;
+          case 2:
+              i = new Intent(MainActivity.this, Galeria.class);
+              MainActivity.this.startActivity(i);
+              break;
+          case 3:
+              i = new Intent(MainActivity.this, Horario.class);
+              MainActivity.this.startActivity(i);
+              break;
+           case 4:
+               i = new Intent(MainActivity.this, Tarifas.class);
+               MainActivity.this.startActivity(i);
+               break;
+           case 5:
+               i = new Intent(MainActivity.this, Localizacion.class);
+               MainActivity.this.startActivity(i);
+               break;
+           case 6:
+               i = new Intent(MainActivity.this, Reserva.class);
+               MainActivity.this.startActivity(i);
+               break;
+           case 7:
+               i = new Intent(MainActivity.this, Contacto.class);
+               MainActivity.this.startActivity(i);
+               break;
+            }
     }
 
     @Override
